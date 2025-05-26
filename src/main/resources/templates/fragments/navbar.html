@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Navbar</title>
+</head>
+<body>
+<div th:fragment="navbar(username, userId)">
+  <nav>
+    <span th:text="'Bienvenido ' + ${username}"></span>
+    <a th:href="@{/products}"><button type="button">Productos</button></a>
+    <a th:href="@{/carts}"><button type="button">Carrito</button></a>
+    <a th:href="@{/login}"><button type="button">Cerrar sesión</button></a>
+  </nav>
+</div>
+</body>
+</html>

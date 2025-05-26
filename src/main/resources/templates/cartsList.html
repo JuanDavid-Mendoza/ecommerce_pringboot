@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang=es xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Listado de carritos</title>
+</head>
+<body>
+<div th:replace="~{fragments/navbar :: navbar(${username}, ${userId})}"></div>
+<div class="container">
+    <div class="cart" th:each="cart: ${carts}">
+        <p th:text="${cart.date}"></p>
+        <div class="products" th:each="product: ${cart.products}">
+        <p th:text="${product.title}"></p>
+        <p th:text="${product.description}"></p>
+        <p th:text="${product.price}"></p>
+        <img th:src="${product.image}" alt="Imágen del producto">
+        </div>
+    </div>
+</div>
+</body>
+</html>
