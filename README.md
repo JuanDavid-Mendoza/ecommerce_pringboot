@@ -31,7 +31,6 @@ Este proyecto es la solución al primer taller de ACM GiWeb - Java Backend Sprin
 ---
 
 ## Estructura del proyecto
-
 src/
  └── main/
      ├── java/
