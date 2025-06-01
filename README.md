@@ -31,27 +31,28 @@ Este proyecto es la solución al primer taller de ACM GiWeb - Java Backend Sprin
 ---
 
 ## Estructura del proyecto
+
 src/
- └── main/
-     ├── java/
-     │    └── com.acm.ecommerce/
-     │         ├── config/
-     │         ├── controller/
-     │         ├── dto/
-     │         ├── models/
-     │         ├── services/
-     │         │     └── impl/
-     │         └── util/
-     └── resources/
-          ├── templates/
-          │    ├── error/
-          │    │    └── 404.html
-          │    ├── fragments/
-          │    │    ├── navbar.html
-          │    │    ├── cartsList.html
-          │    │    └── productsList.html
-          │    └── login.html
-          └── application.properties
+└── main/
+├── java/
+│ └── com.acm.ecommerce/
+│ ├── config/
+│ ├── controller/
+│ ├── dto/
+│ ├── models/
+│ ├── services/
+│ │ └── impl/
+│ └── util/
+└── resources/
+├── templates/
+│ ├── error/
+│ │ └── 404.html
+│ ├── fragments/
+│ │ ├── navbar.html
+│ │ ├── cartsList.html
+│ │ └── productsList.html
+│ └── login.html
+└── application.properties
 
 ---
 
